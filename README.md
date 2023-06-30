@@ -1,1 +1,0 @@
-# Safe-Tech-App
