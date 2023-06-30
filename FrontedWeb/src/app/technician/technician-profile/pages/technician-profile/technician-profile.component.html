@@ -1,0 +1,82 @@
+<app-technician-navbar></app-technician-navbar>
+
+
+<div class="container my-3 border-shadow">
+  <div class="row">
+    <!-- EDITAR -->
+    <div class="row  m-0 mt-2">
+      <mat-card-actions class="button">
+        <button class="mat-raised-button">
+          <mat-icon aria-hidden="false" aria-label="Example edit icon" (click)="openDialog(technicianActual)">edit</mat-icon>
+        </button>
+      </mat-card-actions>
+    </div>
+    <!-- IMAGEN -->
+    <div class="row p-3 justify-content-center">
+      <div class="col-md-10  text-center">
+        <img class="img-profile rounded-circle" src="https://static.wixstatic.com/media/90cf82_e06101db8654435bbdb82960ac061282~mv2.png/v1/fill/w_1377,h_590,al_c,q_90,enc_auto/90cf82_e06101db8654435bbdb82960ac061282~mv2.png" alt="">
+      </div>
+    </div>
+    <!-- DATOS PERSONALES -->
+    <div class="row m-0 justify-content-center border-shadow">
+      <div class="col-md-5  info-user">
+        <p>Name: {{technicianActual.names}}</p>
+      </div>
+      <div class="col-md-5 info-user">
+        <p>Lastname: {{technicianActual.lastNames}}</p>
+      </div>
+      <div class="col-md-5 info-user">
+        <p>Address: {{technicianActual.address}}</p>
+      </div>
+      <div class="col-md-5 info-user">
+        <p>Email: {{technicianActual.email}}</p>
+      </div>
+      <div class="col-md-5 info-user">
+        <p>Username: {{technicianActual.username}}</p>
+      </div>
+      <div class="col-md-5   info-user">
+        <p>Phone number: {{technicianActual.cellPhoneNumber}}</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Profile Information</mat-card-title>
+    <mat-card-subtitle>User-Profile</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://cmsresources.elempleo.com/co/assets/backend/styles/770x513/public/fotos/noticias/istock-480012828.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content class="texto">
+    <div><td><strong>Name:</strong></td>{{technicianActual.names}}</div>
+    <div><td><strong>LastName:</strong></td>{{technicianActual.lastNames}}</div>
+    <div><td><strong>Address:</strong></td>{{technicianActual.address}}</div>
+    <div><td><strong>CellphoneNumber:</strong></td>{{technicianActual.cellPhoneNumber}}</div>
+    <div><td><strong>Email:</strong></td>{{technicianActual.email}}</div>
+    <div><td><strong>Password:</strong></td>{{technicianActual.password}}</div>
+  </mat-card-content>
+  <mat-card-actions  class="button">
+    <mat-icon aria-hidden="false" aria-label="Example edit icon" (click)="openDialog(technicianActual)">edit</mat-icon>
+  </mat-card-actions>
+</mat-card>
+-->
